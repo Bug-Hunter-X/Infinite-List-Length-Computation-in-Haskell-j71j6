@@ -1,0 +1,2 @@
+# Haskell Infinite List Length Bug
+This repository demonstrates a common error in Haskell: attempting to compute the length of an infinite list using the `length` function. This results in a non-terminating computation.  The `bug.hs` file contains the erroneous code, while `bugSolution.hs` provides a corrected version.  The core issue is that Haskell's lazy evaluation doesn't prevent the `length` function from attempting to traverse the entire infinite list before returning a result.
